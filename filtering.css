@@ -1,0 +1,185 @@
+/* < 1280 width overall */
+/* 20px margins */
+
+body {
+    background: #222222;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    display: block;
+}
+
+#title {
+    display: inline-block;
+    color: white;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    padding: 10px 20px;
+
+    margin-top: 20px;
+
+    background-color: rgb(50, 50, 50);
+}
+
+#wrapper {
+    width: 1260px;
+    position: relative;
+    margin: 20px auto 0 auto;
+}
+
+#columns {
+    margin-top: 20px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: left;
+    margin-left: 20px;
+}
+
+#filterer {
+    left: 0;
+    z-index: 0;
+}
+
+#image-toggle {
+    color: white;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    background-color: rgb(50, 50, 50);
+
+    padding: 10px 15px;
+
+    display: inline-block;
+
+    margin-top: 20px;
+}
+
+#image-toggle span {
+    color: white;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+#editor-wrapper {
+    z-index: 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+#instructions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: #cccccc;
+    font-size: 12px;
+
+    pointer-events: none;
+}
+
+#editor {
+}
+
+#chart-wrapper {
+    z-index: 0;
+    position: relative;
+}
+
+#chart {
+}
+
+.label {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+
+    position: absolute;
+
+    z-index: 5;
+}
+
+#frequency {
+    right: 5px;
+    bottom: 5px;
+}
+
+#frequency2 {
+    right: 5px;
+    bottom: 5px;
+}
+
+#power {
+    left: 5px;
+    top: 5px;
+}
+
+#gain {
+    left: 5px;
+    top: 5px;
+}
+
+#info {
+    font-size: 13px;
+    font-family: Arial;
+    color: white;
+
+    line-height: 20px;
+
+    background-color: rgb(50, 50, 50);
+    padding: 15px 20px;
+
+    margin-top: 20px;
+
+    display: inline-block;
+}
+
+#info span {
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+#unsupported {
+    font-size: 13px;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: white;
+
+    line-height: 20px;
+
+    background-color: rgb(50, 50, 50);
+    padding: 15px 20px;
+
+    margin-top: 20px;
+
+    display: none;
+}
+
+#unsupported a{
+    color: white;
+}
+
+#footer {
+    text-align: right;
+
+    font-size: 13px;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: white;
+
+    margin-top: 20px;
+}
+
+#footer a {
+    color: white;
+}

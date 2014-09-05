@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fourier Image Filtering</title>
+
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="filtering.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <div id="title">Fourier Image Filtering</div>
+
+            <div id="columns">
+
+                <div id="left">
+                    <canvas id="filterer" width="512" height="512"></canvas>
+                    <div id="image-toggle"><span id="previous">Previous Image</span> | <span id="next">Next Image</span></div>
+                </div>
+
+                <div id="right">
+                    <div id="chart-wrapper">
+                        <canvas id="chart" width="720" height="225"></canvas>
+
+                        <div id="power" class="label">Power</div>
+                        <div id="frequency" class="label">Frequency</div>
+                    </div>
+
+                    <div id="editor-wrapper">
+                        <canvas id="editor" width="720" height="150"></canvas>
+
+                        <div id="gain" class="label">Gain</div>
+                        <div id="frequency2" class="label">Frequency</div>
+
+                        <div id="instructions">
+                            Click on curve to add points.<br/>
+                            Click and drag points to move them.
+                        </div>
+                    </div>
+
+                    <div id="info">
+                        Any image can be decomposed into the sum of many sinusoids at many different frequencies.<br/>
+                        At the top is the image's frequency spectrum which shows the amplitudes of these sinusoids.<br/>
+                        Below is the frequency response curve which scales the sinusoid amplitudes. Edit it to filter the image.<br/>
+                        For example: <span id="gaussian">Gaussian Blur</span>, <span id="sharpen">Sharpen</span>, <span id="edges">Edge Detection</span>
+                    </div>
+
+                    <div id="footer">
+                        <a href="http://david.li">David.Li</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <br/>
+            <div id="unsupported">
+                Unfortunately, your browser does not appear to support the required features. <a href="http://david.li">Back to David.Li</a>
+            </div>
+            
+        </div>
+
+        <script src="shared.js"></script>
+        <script src="curve.js"></script>
+        <script src="filterer.js"></script>
+        <script src="chart.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
