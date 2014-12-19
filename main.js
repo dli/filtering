@@ -91,6 +91,12 @@ var main = function () {
         ]);
     };
 
+    document.getElementById('reset').onclick = function () {
+        curve.setPoints([
+            [200, 75]
+        ]);
+    };
+
 };
 
 if (hasWebGLSupportWithExtensions(['OES_texture_float'])) {
